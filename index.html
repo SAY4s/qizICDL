@@ -1010,7 +1010,7 @@
                 return;
             }
             
-            if (icdlQuestions.length < 20) {
+            if (icdlQuestions.length < 40) {
                 if (!confirm(`⚠️ فقط ${icdlQuestions.length} سوال ICDL وجود دارد. آیا می‌خواهید ادامه دهید؟`)) {
                     return;
                 }
@@ -1058,7 +1058,7 @@
                 currentQuestions = [...icdlQuestions];
             } else {
                 // انتخاب 14 سوال تصادفی
-                const questionCount = Math.min(20, icdlQuestions.length);
+                const questionCount = Math.min(40, icdlQuestions.length);
                 currentQuestions = getRandomQuestions(questionCount);
             }
             
